@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Variables
+host=$(hostname | sed 's/.local//g')
+user=$(whoami)
+OS="OS X $(sw_vers -productVersion)"
+shell="$SHELL"
+disk=`df | head -2 | tail -1 | awk '{print $5}'`
+brew_packages="`brew list -l | wc -l | awk '{print $1 }'`"
+
+echo "
+                  
+                  ###
+                ####
+                ###
+       ####### ##  #######            User: $user
+     ######################           Hostname: $host
+    #####################             $OS
+    ####################              Kernel: $(uname)
+    ####################              Shell: $shell
+    #####################             Disk: $disk
+     ######################           Packages(brew): $brew_packages
+      ####################
+        ################
+         ####     #####
+               
+"
