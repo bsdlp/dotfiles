@@ -6,10 +6,9 @@ prompt walters
 
 #sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/zsh-p-sjc-lt/p-sjc-lt.zsh
-#source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 
 #update prompt
 PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
@@ -23,7 +22,7 @@ alias sml='rlwrap sml'
 alias sudo='sudo '
 alias vit='vim ~/.todo.txt'
 alias ls='gls --color=auto --group-directories-first'
-alias l='gls'
+alias l='ls'
 alias grep='LC_ALL=C grep'
 alias mv='gmv -i'
 alias cp='gcp -i'
