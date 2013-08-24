@@ -257,3 +257,4 @@ let g:haddock_browser = '/usr/bin/lynx'
 hi Search ctermbg=7
 
 source ~/.vim/plugin/comments.vim
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
