@@ -95,7 +95,7 @@ set mouse-=a
 
 " set colorscheme
 " colorscheme dawn
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized
 set background=light
 " colorscheme jellybeans
