@@ -95,10 +95,10 @@ set mouse-=a
 
 " set colorscheme
 " colorscheme dawn
-" let g:solarized_termcolors=256
-" colorscheme solarized
-" set background=dark
-colorscheme jellybeans
+let g:solarized_termcolors=256
+colorscheme solarized
+set background=light
+" colorscheme jellybeans
 
 "allows sudo with :w!!
 cmap w!! %!sudo tee > /dev/null %
