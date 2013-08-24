@@ -33,6 +33,7 @@ alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
 alias vime='vim -u ~/.vimencrypt -x'
 alias pcat="pygmentize -f terminal256 -O style=native -g"
 alias rake="noglob rake"
+alias bower='noglob bower'
 
 #package management aliases
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
