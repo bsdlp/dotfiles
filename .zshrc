@@ -59,7 +59,7 @@ export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
 export GITHUB_HOST=bits.linode.com
-
+export GITHUB_URL=https://bits.linode.com/
 
 #functions
 calc() { awk "BEGIN { print $* }"; }
