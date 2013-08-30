@@ -58,6 +58,7 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
+export GITHUB_HOST=bits.linode.com
 
 
 #functions

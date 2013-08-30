@@ -21,3 +21,7 @@
     squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
     ri = rebase --interactive --autosquash
 
+[hub]
+	host = bits.linode.com
+[github]
+	user = fly
