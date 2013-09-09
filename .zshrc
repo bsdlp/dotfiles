@@ -8,7 +8,6 @@ prompt walters
 source ~/.zsh/zsh-git-prompt/zshrc.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
-source ~/.zsh/zsh-p-sjc-lt/p-sjc-lt.zsh
 
 #update prompt
 PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
@@ -18,8 +17,6 @@ bindkey "^R" history-incremental-search-backward
 
 #alias
 alias cdc='cd;clear'
-alias sml='rlwrap sml'
-alias sudo='sudo '
 alias vit='vim ~/.todo.txt'
 alias ls='gls --color=auto --group-directories-first'
 alias l='ls'
@@ -29,19 +26,11 @@ alias cp='gcp -i'
 alias rm='grm -i'
 alias c='clear'
 alias cls='clear && ls'
-alias homeconfig='git --git-dir=$HOME/.homeconfig.git/ --work-tree=$HOME'
 alias vime='vim -u ~/.vimencrypt -x'
-alias pcat="pygmentize -f terminal256 -O style=native -g"
 alias rake="noglob rake"
 alias bower='noglob bower'
 
-#package management aliases
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
-alias install='sudo apt-get install '
-alias purge='sudo apt-get purge '
-
 #exports
-export PATH=$PATH:/home/jchen/.gem/ruby/1.9.1/bin
 export EDITOR=vim
 export HISTSIZE=10000
 export SAVEHIST=5000
@@ -55,7 +44,6 @@ export LESS_TERMCAP_se=$'\E[0m'           # end standout-mode
 export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
-export LESSOPEN="|/usr/local/bin/lesspipe.sh %s"
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
 export GITHUB_HOST=bits.linode.com
@@ -82,16 +70,9 @@ export LS_COLORS
 touch /tmp/.cwd
 cd `cat /tmp/.cwd`
 
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-
-export PERL_LOCAL_LIB_ROOT="/home/jchen/perl5";
-export PERL_MB_OPT="--install_base /home/jchen/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/jchen/perl5";
-export PERL5LIB="/home/jchen/perl5/lib/perl5/i686-linux-thread-multi:/home/jchen/perl5/lib/perl5";
-export PATH="/usr/local/sbin:/usr/local/bin:/home/jchen/perl5/bin:/usr/local/share/npm/bin:$PATH:/usr/local/share/python";
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$PATH:/usr/local/share/python";
 
 ~/.zsh/archey-osx
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
