@@ -1,0 +1,12 @@
+#!/bin/bash
+
+/usr/local/bin/stow \
+    -t /Users/jchen/tmp/ \
+    -d $( cd "$( dirname "${BASH_SOURCE[0]}" )"/../.. && pwd ) \
+    --ignore='.git*' \
+    --ignore='.gitconfig' \
+    --ignore='LICENSE' \
+    --ignore='README.md' \
+    --ignore='bin/stow' \
+    osxdotfiles
+
