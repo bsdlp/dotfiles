@@ -1,4 +1,4 @@
-# OSX dotfiles
+# dotfiles
 
 ### This includes:
 * vim

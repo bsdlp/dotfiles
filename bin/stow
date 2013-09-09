@@ -7,6 +7,7 @@
     --ignore='.gitconfig' \
     --ignore='LICENSE' \
     --ignore='README.md' \
+    --ignore='TODO' \
     --ignore='bin/stow' \
     osxdotfiles
 
