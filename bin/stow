@@ -1,7 +1,14 @@
 #!/bin/bash
 
+if [ $1 ]
+then 
+    TARGET_DIR=$1
+else
+    TARGET_DIR=$HOME
+fi
+
 /usr/local/bin/stow \
-    -t $1/ \
+    -t $TARGET_DIR/ \
     -d $( builtin cd $(dirname $0)/../../ ; pwd -P ) \
     --ignore='.git*' \
     --ignore='.gitconfig' \
