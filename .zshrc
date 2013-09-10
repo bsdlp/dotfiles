@@ -6,7 +6,7 @@ prompt walters
 
 #sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 
 #update prompt
@@ -18,17 +18,22 @@ bindkey "^R" history-incremental-search-backward
 #alias
 alias cdc='cd;clear'
 alias vit='vim ~/.todo.txt'
-alias ls='gls --color=auto --group-directories-first'
+alias ls='ls --color=auto --group-directories-first'
 alias l='ls'
 alias grep='LC_ALL=C grep'
-alias mv='gmv -i'
-alias cp='gcp -i'
-alias rm='grm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias rm='rm -i'
 alias c='clear'
 alias cls='clear && ls'
 alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
+
+#package management aliases
+alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+alias install='sudo apt-get install '
+alias purge='sudo apt-get purge '
 
 #exports
 export EDITOR=vim
@@ -70,9 +75,6 @@ export LS_COLORS
 touch /tmp/.cwd
 cd `cat /tmp/.cwd`
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$PATH:/usr/local/share/python";
+export PATH="/usr/local/share/npm/bin:$PATH:/usr/local/share/python";
 
-~/.zsh/archey-osx
-
-fpath=(/usr/local/share/zsh-completions $fpath)
 
