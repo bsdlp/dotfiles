@@ -1,0 +1,6 @@
+[submodule ".zsh/zsh-git-prompt"]
+	path = .zsh/zsh-git-prompt
+	url = git@github.com:fly/zsh-git-prompt.git
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = git@github.com:fly/zsh-syntax-highlighting.git
