@@ -29,6 +29,9 @@ In this example, the contents of file_as_stdin_redirection.txt would be uploaded
  
 * FILENAMES *
 If a filename is misspelled or doesn't have the necessary path description, it will NOT generate an error, but will instead treat it as a text string and upload it.
+
+* CREDIT *
+http://www.shellperson.net/sprunge-pastebin-script/
 --------------------------------------------------------------------------
  
 HERE
