@@ -188,6 +188,22 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" remap for tabsies
+nnoremap <leader>[ gT
+nnoremap <leader>] gt
+nnoremap <leader>1 1gt
+nnoremap <leader>2 2gt
+nnoremap <leader>3 3gt
+nnoremap <leader>4 4gt
+nnoremap <leader>5 5gt
+nnoremap <leader>6 6gt
+nnoremap <leader>7 7gt
+nnoremap <leader>8 8gt
+nnoremap <leader>9 9gt
+nnoremap <leader>0 :tablast<CR>
+cnoreabbrev t tabedit
+nnoremap <leader>t :tabedit 
+
 
 " Tex-Live grep fix
 set grepprg=grep\ -nH\ $*
@@ -203,7 +219,7 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey   ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=grey
 "taglist config
-nnoremap <leader>t :TlistToggle<CR>
+" nnoremap <leader>t :TlistToggle<CR>
 
 "fuzzyfinder config
 nnoremap <leader>f :FufFile<CR>
