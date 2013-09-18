@@ -1,12 +1,20 @@
 #!/bin/bash
 
+if [ $1 ]
+then
+    TARGET_DIR=$1
+else
+    TARGET_DIR=$HOME
+fi
+
 /usr/local/bin/stow \
-    -t /Users/jchen/tmp/ \
-    -d $( cd "$( dirname "${BASH_SOURCE[0]}" )"/../.. && pwd ) \
+    -t $TARGET_DIR/ \
+    -d $( builtin cd $(dirname $0)/../../ ; pwd -P ) \
     --ignore='.git*' \
     --ignore='.gitconfig' \
     --ignore='LICENSE' \
     --ignore='README.md' \
-    --ignore='bin/stow' \
+    --ignore='TODO' \
+    --ignore='bin' \
     osxdotfiles
 
