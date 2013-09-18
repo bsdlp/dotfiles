@@ -7,7 +7,7 @@ else
     TARGET_DIR=$HOME
 fi
 
-/usr/local/bin/stow \
+/usr/bin/stow \
     -t $TARGET_DIR/ \
     -d $( builtin cd $(dirname $0)/../../ ; pwd -P ) \
     --ignore='.git*' \
