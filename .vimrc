@@ -135,6 +135,12 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+" Fix keycodes
+map ^[[1~ <Home>
+map ^[[4~ <End>
+imap ^[[1~ <Home>
+imap ^[[4~ <End>
+
 " fix regex so it's like perl/python
 "nnoremap / /\v
 "vnoremap / /\v
