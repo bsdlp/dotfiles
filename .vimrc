@@ -135,6 +135,12 @@ inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
 
+" Fix keycodes
+map ^[[1~ <Home>
+map ^[[4~ <End>
+imap ^[[1~ <Home>
+imap ^[[4~ <End>
+
 " fix regex so it's like perl/python
 "nnoremap / /\v
 "vnoremap / /\v
@@ -204,6 +210,7 @@ nnoremap <leader>0 :tablast<CR>
 cnoreabbrev t tabedit
 nnoremap <leader>t :tabedit 
 
+
 " Tex-Live grep fix
 set grepprg=grep\ -nH\ $*
 
@@ -218,7 +225,7 @@ let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey   ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=grey
 "taglist config
-nnoremap <leader>t :TlistToggle<CR>
+" nnoremap <leader>t :TlistToggle<CR>
 
 "fuzzyfinder config
 nnoremap <leader>f :FufFile<CR>
