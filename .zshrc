@@ -71,7 +71,7 @@ export LS_COLORS
 touch /tmp/.cwd
 cd `cat /tmp/.cwd`
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:$PATH";
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 ~/.zsh/archey-osx
 
