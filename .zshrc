@@ -77,6 +77,10 @@ export LS_COLORS
 touch /tmp/.cwd
 cd `cat /tmp/.cwd`
 
-export PATH="/usr/local/share/npm/bin:$PATH:/usr/local/share/python";
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+if [ "$(uname)" = "Darwin" ]; then
+    ~/.zsh/archey-osx
+fi
 
 
