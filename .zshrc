@@ -41,9 +41,13 @@ else
 fi
 
 #package management aliases
-alias upgrade='sudo apt-get update && sudo apt-get upgrade'
-alias install='sudo apt-get install '
-alias purge='sudo apt-get purge '
+if [ -f /etc/debian_version ]; then
+    alias upgrade='sudo apt-get update && sudo apt-get upgrade'
+    alias install='sudo apt-get install '
+    alias purge='sudo apt-get purge '
+elif [ -f /etc/pacman.conf ]; then
+    alias upgrade='sudo yaourt -Syyu'
+fi
 
 #exports
 export EDITOR=vim
