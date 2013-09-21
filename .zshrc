@@ -19,17 +19,26 @@ bindkey "^R" history-incremental-search-backward
 #alias
 alias cdc='cd;clear'
 alias vit='vim ~/.todo.txt'
-alias ls='ls --color=auto --group-directories-first'
-alias l='ls'
 alias grep='LC_ALL=C grep'
-alias mv='mv -i'
-alias cp='cp -i'
-alias rm='rm -i'
 alias c='clear'
 alias cls='clear && ls'
 alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
+
+if [ "$(uname)" = "Darwin" ]; then
+    alias ls='gls --color=auto --group-directories-first'
+    alias l='gls'
+    alias mv='gmv -i'
+    alias cp='gcp -i'
+    alias rm='grm -i'
+else
+    alias ls='ls --color=auto --group-directories-first'
+    alias l='ls'
+    alias mv='mv -i'
+    alias cp='cp -i'
+    alias rm='rm -i'
+fi
 
 #package management aliases
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
