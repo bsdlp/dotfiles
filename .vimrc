@@ -9,7 +9,7 @@
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
+" runtime! debian.vim
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim72/vimrc_example.vim or the vim manual
@@ -51,8 +51,6 @@ set wildmode=list:longest
 set ttyfast
 set cursorline
 set laststatus=2
-" set relativenumber
-" set undofile
 set nopaste
 
 " show commands
@@ -94,11 +92,8 @@ syntax on
 set mouse-=a
 
 " set colorscheme
-" colorscheme dawn
-" let g:solarized_termcolors=256
 colorscheme solarized
 set background=light
-" colorscheme jellybeans
 
 "allows sudo with :w!!
 cmap w!! %!sudo tee > /dev/null %
