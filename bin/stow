@@ -14,7 +14,7 @@ fi
 
 $STOWBIN \
     -t $TARGET_DIR/ \
-    -d $( builtin cd $(dirname $0)/../../ ; pwd -P ) \
+    -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
     --ignore='.gitmodules' \
     --ignore='.git' \
     --ignore='LICENSE' \
