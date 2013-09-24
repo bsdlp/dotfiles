@@ -24,3 +24,5 @@
 	prompt = false
 [merge]
 	tool = vimdiff
+[push]
+	default = matching
