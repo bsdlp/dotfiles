@@ -4,8 +4,6 @@
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
 	pager = less -x4
-[push]
-	default = simple
 [color]
 	ui = true
 [help]
