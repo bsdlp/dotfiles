@@ -1,18 +1,18 @@
-[submodule ".zsh/zsh-git-prompt"]
-	path = .zsh/zsh-git-prompt
+[submodule "dotfiles/.zsh/zsh-git-prompt"]
+	path = dotfiles/.zsh/zsh-git-prompt
 	url = git@github.com:fly/zsh-git-prompt.git
-[submodule ".zsh/zsh-syntax-highlighting"]
-	path = .zsh/zsh-syntax-highlighting
+[submodule "dotfiles/.zsh/zsh-syntax-highlighting"]
+	path = dotfiles/.zsh/zsh-syntax-highlighting
 	url = git@github.com:fly/zsh-syntax-highlighting.git
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
+[submodule "dotfiles/.vim/bundle/vim-airline"]
+	path = dotfiles/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule ".vim/bundle/dash.vim"]
-	path = .vim/bundle/dash.vim
+[submodule "dotfiles/.vim/bundle/dash.vim"]
+	path = dotfiles/.vim/bundle/dash.vim
 	url = https://github.com/rizzatti/dash.vim.git
-[submodule ".vim/bundle/funcoo.vim"]
-	path = .vim/bundle/funcoo.vim
+[submodule "dotfiles/.vim/bundle/funcoo.vim"]
+	path = dotfiles/.vim/bundle/funcoo.vim
 	url = https://github.com/rizzatti/funcoo.vim.git
-[submodule ".vim/bundle/vim-sprunge"]
-	path = .vim/bundle/vim-sprunge
+[submodule "dotfiles/.vim/bundle/vim-sprunge"]
+	path = dotfiles/.vim/bundle/vim-sprunge
 	url = https://github.com/chilicuil/vim-sprunge.git
