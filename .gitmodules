@@ -1,0 +1,18 @@
+[submodule "dotfiles/.zsh/zsh-git-prompt"]
+	path = dotfiles/.zsh/zsh-git-prompt
+	url = git@github.com:fly/zsh-git-prompt.git
+[submodule "dotfiles/.zsh/zsh-syntax-highlighting"]
+	path = dotfiles/.zsh/zsh-syntax-highlighting
+	url = git@github.com:fly/zsh-syntax-highlighting.git
+[submodule "dotfiles/.vim/bundle/vim-airline"]
+	path = dotfiles/.vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "dotfiles/.vim/bundle/dash.vim"]
+	path = dotfiles/.vim/bundle/dash.vim
+	url = https://github.com/rizzatti/dash.vim.git
+[submodule "dotfiles/.vim/bundle/funcoo.vim"]
+	path = dotfiles/.vim/bundle/funcoo.vim
+	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "dotfiles/.vim/bundle/vim-sprunge"]
+	path = dotfiles/.vim/bundle/vim-sprunge
+	url = https://github.com/chilicuil/vim-sprunge.git
