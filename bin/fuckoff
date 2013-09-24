@@ -1,0 +1,26 @@
+#!/bin/bash
+if [ "$(uname)" = "Darwin" ]; then
+    STOWBIN=/usr/local/bin/stow
+else
+    STOWBIN=/usr/bin/stow
+fi
+
+if [ $1 ]
+then
+    TARGET_DIR=$1
+else
+    TARGET_DIR=$HOME
+fi
+
+$STOWBIN \
+    -t $TARGET_DIR/ \
+    -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
+    --ignore='.gitmodules' \
+    --ignore='.git' \
+    --ignore='LICENSE' \
+    --ignore='README.md' \
+    --ignore='TODO' \
+    --ignore='bin' \
+    -D \
+    dotfiles
+
