@@ -25,13 +25,13 @@ call pathogen#helptags()
 execute pathogen#infect()
 
 " directory
-set directory=/home/jchen/.vim
+set directory=$HOME/.vim
 "
 " disable backups (and swap)
 set nobackup
 set nowritebackup
 set noswapfile
-" set undodir=/home/jchen/.vimbackup
+" set undodir=$HOME/.vimbackup
 
 " wrap searches
 set wrapscan
