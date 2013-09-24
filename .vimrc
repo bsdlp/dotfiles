@@ -278,5 +278,10 @@ let g:haddock_browser = '/usr/bin/lynx'
 "fix the bad search color with solarized
 hi Search ctermbg=7
 
+" airline
+let g:airline_powerline_fonts = 1
+set ttimeoutlen=50
+set t_Co=256
+
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
