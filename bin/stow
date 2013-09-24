@@ -17,7 +17,6 @@ $STOWBIN \
     -d $( builtin cd $(dirname $0)/../../ ; pwd -P ) \
     --ignore='.gitmodules' \
     --ignore='.git' \
-    --ignore='.gitconfig' \
     --ignore='LICENSE' \
     --ignore='README.md' \
     --ignore='TODO' \
