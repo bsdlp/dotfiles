@@ -28,7 +28,7 @@ alias bower='noglob bower'
 
 if [ "$(uname)" = "Darwin" ]; then
     alias ls='gls --color=auto --group-directories-first'
-    alias l='gls'
+    alias l='ls'
     alias mv='gmv -i'
     alias cp='gcp -i'
     alias rm='grm -i'
