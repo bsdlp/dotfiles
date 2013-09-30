@@ -91,6 +91,8 @@ export LS_COLORS
 
 
 export PATH="/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+export RBENV_ROOT=/usr/local/var/rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if [ "$(uname)" = "Darwin" ]; then
     ~/.zsh/archey-osx
