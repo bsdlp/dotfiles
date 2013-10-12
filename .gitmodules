@@ -1,9 +1,9 @@
 [submodule "dotfiles/.zsh/zsh-git-prompt"]
 	path = dotfiles/.zsh/zsh-git-prompt
-	url = git@github.com:fly/zsh-git-prompt.git
+	url = https://github.com:fly/zsh-git-prompt.git
 [submodule "dotfiles/.zsh/zsh-syntax-highlighting"]
 	path = dotfiles/.zsh/zsh-syntax-highlighting
-	url = git@github.com:fly/zsh-syntax-highlighting.git
+	url = https://github.com:fly/zsh-syntax-highlighting.git
 [submodule "dotfiles/.vim/bundle/vim-airline"]
 	path = dotfiles/.vim/bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
