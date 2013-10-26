@@ -1,8 +1,12 @@
 #basic stuff
-autoload -U compinit promptinit add-zsh-hook
+autoload -U compinit promptinit add-zsh-hook zmv
 compinit -u
 promptinit
 prompt walters
+
+export PATH="/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
@@ -90,7 +94,6 @@ LS_COLORS='no=38;5;244:rs=0:di=38;5;33:ln=38;5;33:pi=48;5;230;38;5;136;01:so=48;
 export LS_COLORS
 
 
-export PATH="/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 
 if [ "$(uname)" = "Darwin" ]; then
     ~/.zsh/archey-osx
