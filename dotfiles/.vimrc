@@ -57,7 +57,7 @@ set nopaste
 set showcmd
 
 " yank to paste buffer
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 " show line and column position of cursor
 set ruler
