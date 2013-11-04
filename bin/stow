@@ -1,5 +1,5 @@
-#!/bin/bash
-if [ "$(uname)" = "Darwin" ]; then
+#!/usr/bin/env zsh
+if [ "$(uname)" = "Darwin" -o "$(uname)" = "FreeBSD" ]; then
     STOWBIN=/usr/local/bin/stow
 else
     STOWBIN=/usr/bin/stow
@@ -9,8 +9,10 @@ if [ $1 ]
 then
     TARGET_DIR=$1
 else
-    TARGET_DIR=$HOME
+    TARGET_DIR=$(readlink -f $HOME)
 fi
+
+echo $TARGET_DIR
 
 $STOWBIN \
     -t $TARGET_DIR/ \

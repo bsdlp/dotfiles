@@ -1,5 +1,4 @@
-#basic stuff
-autoload -U compinit promptinit add-zsh-hook zmv
+#basic stuff autoload -U compinit promptinit add-zsh-hook zmv
 compinit -u
 promptinit
 prompt walters
@@ -20,6 +19,16 @@ PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
 #binds
 bindkey "^R" history-incremental-search-backward
 
+if [ "$(uname)" = "Darwin" ]; then
+    export _ENVIRONMENT="osx"
+elif [ "$(uname)" = "FreeBSD" ]; then
+    export _ENVIRONMENT="fbsd"
+elif [ -f /etc/debian_version ]; then
+    export _ENVIRONMENT="debian"
+elif [ -f /etc/pacman.conf ]; then
+    export _ENVIRONMENT="archlinux"
+fi
+
 #alias
 alias cdc='cd;clear'
 alias vit='vim ~/.todo.txt'
@@ -30,7 +39,7 @@ alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
 
-if [ "$(uname)" = "Darwin" ]; then
+if [ $_ENVIRONMENT = "osx" -o $_ENVIRONMENT = "fbsd" ]; then
     alias ls='gls --color=auto --group-directories-first'
     alias l='ls'
     alias mv='gmv -i'
@@ -45,12 +54,14 @@ else
 fi
 
 #package management aliases
-if [ -f /etc/debian_version ]; then
+if [ $_ENVIRONMENT = "debian" ]; then
     alias upgrade='sudo apt-get update && sudo apt-get upgrade'
     alias install='sudo apt-get install '
     alias purge='sudo apt-get purge '
-elif [ -f /etc/pacman.conf ]; then
+elif [ $_ENVIRONMENT = "archlinux" ]; then
     alias upgrade='sudo yaourt -Syyu'
+elif [ $_ENVIRONMENT = "fbsd" ]; then
+    alias upgrade='sudo pkg update && sudo pkg upgrade'
 fi
 
 #exports
@@ -97,7 +108,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/b
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-if [ "$(uname)" = "Darwin" ]; then
+if [ $_ENVIRONMENT = "osx" ]; then
     ~/.zsh/archey-osx
 fi
 
