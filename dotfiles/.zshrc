@@ -1,4 +1,5 @@
-#basic stuff autoload -U compinit promptinit add-zsh-hook zmv
+#basic stuff
+autoload -U compinit promptinit add-zsh-hook zmv
 compinit -u
 promptinit
 prompt walters
