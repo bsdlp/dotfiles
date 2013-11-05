@@ -1,8 +1,11 @@
 # dotfiles
 
-### This includes:
+### This includes dotfiles for:
 * vim
 * zsh
+* screen
+* tmux
+* git
 
 ### How to use?
 
