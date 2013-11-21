@@ -1,16 +1,18 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 if [ "$(uname)" = "Darwin" -o "$(uname)" = "FreeBSD" ]; then
     STOWBIN=/usr/local/bin/stow
+    READLINK=/usr/local/bin/greadlink
 else
     STOWBIN=/usr/bin/stow
+    READLINK=/bin/readlink
 fi
 
 if [ $1 ]
 then
     TARGET_DIR=$1
 else
-    TARGET_DIR=$(readlink -f $HOME)
+    TARGET_DIR=$($READLINK -f $HOME)
 fi
 
 echo $TARGET_DIR
