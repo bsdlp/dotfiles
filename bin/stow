@@ -1,4 +1,5 @@
-#!/usr/bin/env zsh
+#!/usr/bin/sh
+
 if [ "$(uname)" = "Darwin" -o "$(uname)" = "FreeBSD" ]; then
     STOWBIN=/usr/local/bin/stow
 else
