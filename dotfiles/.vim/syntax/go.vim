@@ -1,0 +1,1 @@
+/usr/local/opt/go/libexec/misc/vim/syntax/go.vim
