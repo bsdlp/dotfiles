@@ -109,6 +109,13 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/b
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# golang
+
+export GOPATH=$HOME/go
+if [ $_ENVIRONMENT = "osx" ]; then
+    export GOROOT=/usr/local/opt/go/libexec
+fi
+
 if [ $_ENVIRONMENT = "osx" ]; then
     ~/.zsh/archey-osx
 fi
