@@ -4,10 +4,6 @@ compinit -u
 promptinit
 prompt walters
 
-export PATH="/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 #sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
