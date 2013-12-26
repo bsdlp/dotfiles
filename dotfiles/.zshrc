@@ -112,6 +112,6 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 if [ $_ENVIRONMENT = "osx" ]; then
-    ~/.zsh/archey-osx
+    ~/.zsh/archey-osx -c
 fi
 
