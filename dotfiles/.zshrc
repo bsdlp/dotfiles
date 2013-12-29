@@ -9,6 +9,9 @@ source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
+if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
+    source /usr/local/bin/aws_zsh_completer.sh
+fi
 
 #update prompt
 PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
