@@ -8,7 +8,7 @@ install_submodules:
 	git submodule update
 
 install_needful:
-	git update
+	git pull
 	./bin/stow
 
 uninstall:
