@@ -1,6 +1,6 @@
 #!/usr/bin/env make
 
-install: install_submodule install_needful
+install: install_submodules install_needful
 
 install_submodules:
 	git submodule init
