@@ -22,3 +22,6 @@
 [submodule "dotfiles/.vim/bundle/vim-gocode"]
 	path = dotfiles/.vim/bundle/vim-gocode
 	url = https://github.com/fly/vim-gocode.git
+[submodule "dotfiles/.vim/bundle/vim-jinja"]
+	path = dotfiles/.vim/bundle/vim-jinja
+	url = git://github.com/mitsuhiko/vim-jinja.git
