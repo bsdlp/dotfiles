@@ -8,6 +8,7 @@ prompt walters
 source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
+source ~/.zsh/ix/ix.zsh
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
@@ -69,7 +70,7 @@ export EDITOR=vim
 export HISTSIZE=10000
 export SAVEHIST=5000
 export HISTFILE=~/.zshistory
-export NODE_PATH=/usr/local/lib/node/:/usr/local/lib/jsctags/:$NODE_PATH
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export LESS_TERMCAP_mb=$'\E[01;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\E[01;38;5;74m'  # begin bold
