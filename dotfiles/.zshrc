@@ -46,6 +46,7 @@ if [ $_ENVIRONMENT = "osx" -o $_ENVIRONMENT = "fbsd" ]; then
     alias mv='gmv -i'
     alias cp='gcp -i'
     alias rm='grm -i'
+    alias sed='gsed'
 else
     alias ls='ls --color=auto --group-directories-first'
     alias l='ls'
