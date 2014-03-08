@@ -17,14 +17,27 @@ fi
 
 echo $TARGET_DIR
 
-$STOWBIN \
-    -t $TARGET_DIR/ \
-    -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
-    --ignore='.gitmodules' \
-    --ignore='.git' \
-    --ignore='LICENSE' \
-    --ignore='README.md' \
-    --ignore='TODO' \
-    --ignore='bin' \
-    dotfiles
-
+if [ -f ~/.ssh/authorized_keys ]; then
+    $STOWBIN \
+        -t $TARGET_DIR/ \
+        -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
+        --ignore='.gitmodules' \
+        --ignore='.git' \
+        --ignore='LICENSE' \
+        --ignore='dotfiles/.ssh/authorized_keys' \
+        --ignore='README.md' \
+        --ignore='TODO' \
+        --ignore='bin' \
+        dotfiles
+else
+    $STOWBIN \
+        -t $TARGET_DIR/ \
+        -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
+        --ignore='.gitmodules' \
+        --ignore='.git' \
+        --ignore='LICENSE' \
+        --ignore='README.md' \
+        --ignore='TODO' \
+        --ignore='bin' \
+        dotfiles
+fi
