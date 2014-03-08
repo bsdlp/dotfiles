@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ "$(uname)" = "Darwin" -o "$(uname)" = "FreeBSD" ]; then
     STOWBIN=/usr/local/bin/stow
