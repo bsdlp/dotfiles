@@ -24,7 +24,7 @@ if [ -f ~/.ssh/authorized_keys ]; then
         --ignore='.gitmodules' \
         --ignore='.git' \
         --ignore='LICENSE' \
-        --ignore='dotfiles/.ssh/authorized_keys' \
+        --ignore='dotfiles/.ssh' \
         --ignore='README.md' \
         --ignore='TODO' \
         --ignore='bin' \
