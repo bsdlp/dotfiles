@@ -21,13 +21,13 @@ PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
 bindkey "^R" history-incremental-search-backward
 
 if [ "$(uname)" = "Darwin" ]; then
-    export _ENVIRONMENT="osx"
+    source ~/.zsh/osx/osx.zshrc
 elif [ "$(uname)" = "FreeBSD" ]; then
-    export _ENVIRONMENT="fbsd"
+    source ~/.zsh/freebsd/freebsd.zshrc
 elif [ -f /etc/debian_version ]; then
-    export _ENVIRONMENT="debian"
+    source ~/.zsh/debian/debian.zshrc
 elif [ -f /etc/pacman.conf ]; then
-    export _ENVIRONMENT="archlinux"
+    source ~/.zsh/archlinux/archlinux.zshrc
 fi
 
 #alias
@@ -39,32 +39,6 @@ alias cls='clear && ls'
 alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
-
-if [ $_ENVIRONMENT = "osx" -o $_ENVIRONMENT = "fbsd" ]; then
-    alias ls='gls --color=auto --group-directories-first'
-    alias l='ls'
-    alias mv='gmv -i'
-    alias cp='gcp -i'
-    alias rm='grm -i'
-    alias sed='gsed'
-else
-    alias ls='ls --color=auto --group-directories-first'
-    alias l='ls'
-    alias mv='mv -i'
-    alias cp='cp -i'
-    alias rm='rm -i'
-fi
-
-#package management aliases
-if [ $_ENVIRONMENT = "debian" ]; then
-    alias upgrade='sudo apt-get update && sudo apt-get upgrade'
-    alias install='sudo apt-get install '
-    alias purge='sudo apt-get purge '
-elif [ $_ENVIRONMENT = "archlinux" ]; then
-    alias upgrade='sudo yaourt -Syyu'
-elif [ $_ENVIRONMENT = "fbsd" ]; then
-    alias upgrade='sudo pkg update && sudo pkg upgrade'
-fi
 
 #exports
 export EDITOR=vim
@@ -107,16 +81,9 @@ LS_COLORS='no=38;5;244:rs=0:di=38;5;33:ln=38;5;33:pi=48;5;230;38;5;136;01:so=48;
 export LS_COLORS
 
 export GOPATH=$HOME/go
-if [ $_ENVIRONMENT = "osx" ]; then
-    export GOROOT=/usr/local/opt/go/libexec
-fi
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
 export RBENV_ROOT=/usr/local/var/rbenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-if [ $_ENVIRONMENT = "osx" ]; then
-    ~/.zsh/archey-osx -c
-fi
 
