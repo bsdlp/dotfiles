@@ -1,8 +1,8 @@
 #!/usr/bin/env make
 
-ZSH_PATH = $(shell which zsh)
+ZSH_PATH = 
 
-install: install_submodules install_needful
+install: install_submodules install_needful shell
 
 install_submodules:
 	git submodule init
@@ -11,8 +11,12 @@ install_submodules:
 install_needful:
 	git pull
 	./bin/stow
-	$(shell chsh -s $$ZSH_PATH)
+
+shell:
+	$(shell chsh --shell $(shell which zsh))
 
 uninstall:
 	./bin/fuckoff
+
+.PHONY: shell
 
