@@ -16,7 +16,6 @@ source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/ix/ix.zsh
-source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
 fi
@@ -29,6 +28,7 @@ bindkey "^R" history-incremental-search-backward
 
 if [ "$(uname)" = "Darwin" ]; then
     source ~/.zsh/osx/osx.zshrc
+    source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 elif [ "$(uname)" = "FreeBSD" ]; then
     source ~/.zsh/freebsd/freebsd.zshrc
 elif [ -f /etc/debian_version ]; then
