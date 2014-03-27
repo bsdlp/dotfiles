@@ -8,6 +8,7 @@ alias mv='gmv -i'
 alias cp='gcp -i'
 alias rm='grm -i'
 alias sed='gsed'
+alias find='gfind'
 
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
