@@ -16,6 +16,7 @@ source ~/.zsh/zsh-git-prompt/zshrc.sh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/ix/ix.zsh
+source ~/.zsh/k/k.sh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
 fi
