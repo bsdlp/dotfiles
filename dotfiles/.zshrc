@@ -64,8 +64,6 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
-export GITHUB_HOST=bits.linode.com
-export GITHUB_URL=https://bits.linode.com/
 export TERM="screen-256color"
 
 #functions
