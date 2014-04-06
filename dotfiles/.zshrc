@@ -20,6 +20,9 @@ source ~/.zsh/k/k.sh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
 fi
+if [ -e "~/.zsh/github" ]; then
+    source ~/.zsh/github
+fi
 
 #update prompt
 PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
@@ -64,9 +67,13 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
-export GITHUB_HOST=bits.linode.com
-export GITHUB_URL=https://bits.linode.com/
 export TERM="screen-256color"
+
+if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=$HOME/.virtualenvs
+    export PROJECT_HOME=$HOME/git
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 #functions
 calc() { awk "BEGIN { print $* }"; }
