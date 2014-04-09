@@ -2,6 +2,8 @@
 
 install: install_submodules install_needful shell
 
+update: install_submodules install_needful
+
 install_submodules:
 	git submodule init
 	git submodule update
