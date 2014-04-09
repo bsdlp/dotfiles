@@ -2,13 +2,14 @@
 export _ENVIRONMENT="osx"
 
 # gnu coreutil aliases
+alias cp='gcp -i'
+alias find='gfind'
 alias ls='gls --color=auto --group-directories-first'
 alias l='ls'
 alias mv='gmv -i'
-alias cp='gcp -i'
+alias readlink='greadlink'
 alias rm='grm -i'
 alias sed='gsed'
-alias find='gfind'
 
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
