@@ -70,6 +70,12 @@ export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
 export TERM="screen-256color"
 
 if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
+    if [ $(git rev-parse --git-dir > /dev/null 2>&1) ] ; then
+        _GITREPO=$(basename `git rev-parse --show-toplevel`)
+        alias mkvenv='mkvirtualenv $_GITREPO'
+    else
+        alias mkvenv='mkvirtualenv $(basename "$PWD")'
+    fi
     export WORKON_HOME=$HOME/.venvs
     mkdir -p $WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
