@@ -70,8 +70,8 @@ export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
 export TERM="screen-256color"
 
 if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/git
+    export WORKON_HOME=$HOME/.venvs
+    mkdir -p $WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
