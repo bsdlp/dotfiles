@@ -15,6 +15,9 @@ install_needful:
 shell:
 	$(shell chsh --shell $(shell which zsh))
 
+pyinstall:
+	pip install virtualenvwrapper
+
 uninstall:
 	./bin/fuckoff
 
