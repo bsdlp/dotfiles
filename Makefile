@@ -1,7 +1,5 @@
 #!/usr/bin/env make
 
-ZSH_PATH = 
-
 install: install_submodules install_needful shell
 
 install_submodules:
