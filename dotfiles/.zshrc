@@ -4,6 +4,17 @@ compinit -u
 promptinit
 prompt walters
 
+if [ "$(uname)" = "Darwin" ]; then
+    source ~/.zsh/osx/osx.zshrc
+    source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
+elif [ "$(uname)" = "FreeBSD" ]; then
+    source ~/.zsh/freebsd/freebsd.zshrc
+elif [ -f /etc/debian_version ]; then
+    source ~/.zsh/debian/debian.zshrc
+elif [ -f /etc/pacman.conf ]; then
+    source ~/.zsh/archlinux/archlinux.zshrc
+fi
+
 export GOPATH=$HOME/go
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
@@ -30,17 +41,6 @@ PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
 
 #binds
 bindkey "^R" history-incremental-search-backward
-
-if [ "$(uname)" = "Darwin" ]; then
-    source ~/.zsh/osx/osx.zshrc
-    source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
-elif [ "$(uname)" = "FreeBSD" ]; then
-    source ~/.zsh/freebsd/freebsd.zshrc
-elif [ -f /etc/debian_version ]; then
-    source ~/.zsh/debian/debian.zshrc
-elif [ -f /etc/pacman.conf ]; then
-    source ~/.zsh/archlinux/archlinux.zshrc
-fi
 
 #alias
 alias cdc='cd;clear'
