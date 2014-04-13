@@ -4,6 +4,13 @@ compinit -u
 promptinit
 prompt walters
 
+export GOPATH=$HOME/go
+
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
+export RBENV_ROOT=/usr/local/var/rbenv
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 if [ "$(uname)" = "Darwin" ]; then
     source ~/.zsh/osx/osx.zshrc
     source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
@@ -14,13 +21,6 @@ elif [ -f /etc/debian_version ]; then
 elif [ -f /etc/pacman.conf ]; then
     source ~/.zsh/archlinux/archlinux.zshrc
 fi
-
-export GOPATH=$HOME/go
-
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
-export RBENV_ROOT=/usr/local/var/rbenv
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 #sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
