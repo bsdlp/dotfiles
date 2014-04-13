@@ -17,6 +17,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/ix/ix.zsh
 source ~/.zsh/k/k.sh
+source ~/.zsh/venv.sh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
 fi
@@ -68,18 +69,6 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 export PERL_MM_USE_DEFAULT=1
 export PERL_EXTUTILS_AUTOINSTALL="--defaultdeps"
 export TERM="screen-256color"
-
-if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
-    if [ $(git rev-parse --git-dir > /dev/null 2>&1) ] ; then
-        _GITREPO=$(basename `git rev-parse --show-toplevel`)
-        alias mkvenv='mkvirtualenv $_GITREPO'
-    else
-        alias mkvenv='mkvirtualenv $(basename "$PWD")'
-    fi
-    export WORKON_HOME=$HOME/.venvs
-    mkdir -p $WORKON_HOME
-    source /usr/local/bin/virtualenvwrapper.sh
-fi
 
 #functions
 calc() { awk "BEGIN { print $* }"; }

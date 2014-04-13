@@ -1,0 +1,13 @@
+if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=$HOME/.venvs
+    mkdir -p $WORKON_HOME
+    source /usr/local/bin/virtualenvwrapper.sh
+
+    if [ $(git rev-parse --git-dir > /dev/null 2>&1) ] ; then
+        _GITREPO=$(basename `git rev-parse --show-toplevel`)
+        alias mkvenv='mkvirtualenv $_GITREPO'
+    else
+        alias mkvenv='mkvirtualenv $(basename "$PWD")'
+    fi
+fi
+
