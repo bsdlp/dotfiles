@@ -77,13 +77,6 @@ record_pwd() { pwd > /tmp/.cwd-$USER }
 touch /tmp/.cwd-$USER
 cd `cat /tmp/.cwd-$USER`
 
-#__git_files () {
-#    _wanted files expl ‘local files’ _files
-#}
-#__git_files () { 
-#    _wanted files expl ‘local files’ _files 
-#}
-
 #register hooks
 add-zsh-hook chpwd record_pwd
 
