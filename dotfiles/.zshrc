@@ -51,6 +51,7 @@ alias cls='clear && ls'
 alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
+alias v = 'vim'
 
 #exports
 export EDITOR=vim
