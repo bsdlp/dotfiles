@@ -11,6 +11,7 @@ export RBENV_ROOT=/usr/local/var/rbenv
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# OS-specific jawns
 if [ "$(uname)" = "Darwin" ]; then
     source ~/.zsh/osx/osx.zshrc
     source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
