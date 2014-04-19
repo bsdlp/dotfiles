@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
 if [[ $1 == "-c" ]]; then
   GREEN='\033[00;32m'

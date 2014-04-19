@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 usage() {
 description | fmt -s >&2
 }

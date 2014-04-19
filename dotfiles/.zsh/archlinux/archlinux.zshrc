@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 # set _ENVIRONMENT envvar
 export _ENVIRONMENT="archlinux"
 
