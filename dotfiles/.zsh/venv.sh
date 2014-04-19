@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME=$HOME/.venvs
     mkdir -p $WORKON_HOME
