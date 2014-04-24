@@ -28,3 +28,6 @@
 [submodule "dotfiles/.zsh/k"]
     path = dotfiles/.zsh/k
     url = https://github.com/supercrabtree/k.git
+[submodule "dotfiles/.vim/bundle/salt-vim"]
+	path = dotfiles/.vim/bundle/salt-vim
+	url = git@github.com:saltstack/salt-vim.git
