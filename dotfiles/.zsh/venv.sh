@@ -11,5 +11,8 @@ if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
     else
         alias mkvenv='mkvirtualenv $(basename "$PWD")'
     fi
+
+    alias mkvenv2='mkvenv -p $(which python2)'
+
 fi
 
