@@ -16,6 +16,10 @@ alias sed='gsed'
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
 
+# Scala
+export SCALA_HOME=/usr/local/opt/scala
+export PATH="$PATH:$SCALA_HOME/bin"
+
 # Apple logo!
 ~/.zsh/archey-osx -c
 
