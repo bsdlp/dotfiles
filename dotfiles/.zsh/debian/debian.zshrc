@@ -15,3 +15,5 @@ alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 alias install='sudo apt-get install '
 alias purge='sudo apt-get purge '
 
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
