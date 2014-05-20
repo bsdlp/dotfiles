@@ -19,9 +19,6 @@
 [submodule "dotfiles/.vim/bundle/vim-python-pep8-indent"]
     path = dotfiles/.vim/bundle/vim-python-pep8-indent
     url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "dotfiles/.vim/bundle/vim-gocode"]
-    path = dotfiles/.vim/bundle/vim-gocode
-    url = https://github.com/Blackrush/vim-gocode.git
 [submodule "dotfiles/.vim/bundle/vim-jinja"]
     path = dotfiles/.vim/bundle/vim-jinja
     url = git://github.com/mitsuhiko/vim-jinja.git
