@@ -30,4 +30,4 @@
 	url = git@github.com:saltstack/salt-vim.git
 [submodule "dotfiles/.vim/bundle/vim-go"]
 	path = dotfiles/.vim/bundle/vim-go
-	url = https://github.com/fly/vim-go.git
+	url = https://github.com/fatih/vim-go.git
