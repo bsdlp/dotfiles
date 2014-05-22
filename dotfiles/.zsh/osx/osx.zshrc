@@ -22,6 +22,10 @@ if [ -d /usr/local/opt/scala ]; then
     export PATH="$PATH:$SCALA_HOME/bin"
 fi
 
+if [ -d /Users/jchen/google-cloud-sdk ]; then
+    source /Users/jchen/google-cloud-sdk/path.bash.inc
+fi
+
 # Apple logo!
 ~/.zsh/archey-osx -c
 
