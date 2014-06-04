@@ -23,7 +23,7 @@ if [ -d /usr/local/opt/scala ]; then
 fi
 
 if [ -d /Users/jchen/google-cloud-sdk ]; then
-    source /Users/jchen/google-cloud-sdk/path.bash.inc
+    source /Users/jchen/google-cloud-sdk/path.zsh.inc
 fi
 
 # Apple logo!
