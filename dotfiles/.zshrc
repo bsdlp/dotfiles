@@ -29,6 +29,7 @@ source ~/.zsh/zsh-sprunge/sprunge.zsh
 source ~/.zsh/ix/ix.zsh
 source ~/.zsh/k/k.sh
 source ~/.zsh/venv.sh
+source ~/.zsh/z/z.sh
 if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
     source /usr/local/bin/aws_zsh_completer.sh
 fi
