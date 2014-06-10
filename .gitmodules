@@ -26,11 +26,11 @@
     path = dotfiles/.zsh/k
     url = https://github.com/supercrabtree/k.git
 [submodule "dotfiles/.vim/bundle/salt-vim"]
-	path = dotfiles/.vim/bundle/salt-vim
-	url = git@github.com:saltstack/salt-vim.git
+    path = dotfiles/.vim/bundle/salt-vim
+    url = git@github.com:saltstack/salt-vim.git
 [submodule "dotfiles/.vim/bundle/vim-go"]
-	path = dotfiles/.vim/bundle/vim-go
-	url = https://github.com/fatih/vim-go.git
+    path = dotfiles/.vim/bundle/vim-go
+    url = https://github.com/fatih/vim-go.git
 [submodule "dotfiles/.zsh/z"]
-	path = dotfiles/.zsh/z
-	url = https://github.com/rupa/z.git
+    path = dotfiles/.zsh/z
+    url = https://github.com/rupa/z.git
