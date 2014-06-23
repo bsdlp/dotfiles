@@ -7,15 +7,9 @@
 [submodule "dotfiles/.vim/bundle/vim-airline"]
     path = dotfiles/.vim/bundle/vim-airline
     url = https://github.com/bling/vim-airline.git
-[submodule "dotfiles/.vim/bundle/dash.vim"]
-    path = dotfiles/.vim/bundle/dash.vim
-    url = https://github.com/rizzatti/dash.vim.git
 [submodule "dotfiles/.vim/bundle/funcoo.vim"]
     path = dotfiles/.vim/bundle/funcoo.vim
     url = https://github.com/rizzatti/funcoo.vim.git
-[submodule "dotfiles/.vim/bundle/vim-sprunge"]
-    path = dotfiles/.vim/bundle/vim-sprunge
-    url = https://github.com/chilicuil/vim-sprunge.git
 [submodule "dotfiles/.vim/bundle/vim-python-pep8-indent"]
     path = dotfiles/.vim/bundle/vim-python-pep8-indent
     url = https://github.com/hynek/vim-python-pep8-indent.git
