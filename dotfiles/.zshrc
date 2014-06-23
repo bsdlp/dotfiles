@@ -10,6 +10,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/b
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
+# define which keys to load
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa id_ed25519
+
 # OS-specific jawns
 if [ "$(uname)" = "Darwin" ]; then
     source ~/.zsh/osx/osx.zshrc
