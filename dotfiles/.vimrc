@@ -5,7 +5,7 @@
 " everytime an upgrade of the vim packages is performed.  It is recommended to
 " make changes after sourcing freebsd.vim since it alters the value of the
 " 'compatible' option.
-" 
+"
 
 " This line should not be removed as it ensures that various options are
 " properly set to work with the Vim-related packages available in Debian.
@@ -168,9 +168,6 @@ au FocusLost * :wa
 " remove trailing whitespace
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
-" Ack
-nnoremap <leader>a :Ack
-
 " reselect things just pasted
 nnoremap <leader>v V`]
 
@@ -200,7 +197,7 @@ nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
 cnoreabbrev t tabedit
-nnoremap <leader>t :tabedit 
+nnoremap <leader>t :tabedit
 
 
 set grepprg=grep\ -nH\ $*
