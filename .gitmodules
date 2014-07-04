@@ -28,3 +28,6 @@
 [submodule "dotfiles/.zsh/z"]
     path = dotfiles/.zsh/z
     url = https://github.com/rupa/z.git
+[submodule "dotfiles/.vim/bundle/vim-scala"]
+	path = dotfiles/.vim/bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
