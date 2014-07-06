@@ -2,11 +2,11 @@
 
 function kill_ssh_socket {
     if [ -z "$1" ] ; then
-        rm $HOME/.ssh/sock/*\;$1
-        return 0
-    else
         echo 'can you specify a socket please?'
         return 1
+    else
+        rm $HOME/.ssh/sock/*\;$1
+        return 0
     fi
 }
 
