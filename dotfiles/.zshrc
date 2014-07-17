@@ -74,6 +74,7 @@ alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
 alias v='vim'
+alias pcs='scp -S hss'
 
 # exports
 export EDITOR=vim
