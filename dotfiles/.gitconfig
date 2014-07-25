@@ -17,8 +17,6 @@
 	g = grep --break --heading --line-number
 	today = !sh -c 'git diff $(git rev-list -n1 --before=\"1 day ago\" $(git rev-parse --abbrev-ref HEAD))'
 
-[hub]
-	host = bits.linode.com
 [github]
 	user = fly
 [diff]
