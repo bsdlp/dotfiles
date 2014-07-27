@@ -1,32 +1,32 @@
 [user]
-	name = Jon Chen
-	email = bsd@voltaire.sh
+    name = Jon Chen
+    email = bsd@voltaire.sh
 [core]
-	excludesfile = /Users/jchen/.gitignore_global
-	pager = less -x4
+    excludesfile = /Users/jchen/.gitignore_global
+    pager = less -x4
 [color]
-	ui = true
+    ui = true
 [help]
-	autocorrect = 1
+    autocorrect = 1
 [alias]
     fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
     squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
     ri = rebase --interactive --autosquash
-	d = difftool
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	g = grep --break --heading --line-number
-	today = !sh -c 'git diff $(git rev-list -n1 --before=\"1 day ago\" $(git rev-parse --abbrev-ref HEAD))'
+    d = difftool
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    g = grep --break --heading --line-number
+    today = !sh -c 'git diff $(git rev-list -n1 --before=\"1 day ago\" $(git rev-parse --abbrev-ref HEAD))'
     co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 
 [github]
-	user = fly
+    user = fly
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [merge]
-	tool = vimdiff
+    tool = vimdiff
 [push]
-	default = simple
+    default = simple
 [grep]
-	lineNumber = true
+    lineNumber = true
