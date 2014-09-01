@@ -26,6 +26,10 @@ if [ -d /Users/jchen/google-cloud-sdk ]; then
     source /Users/jchen/google-cloud-sdk/path.zsh.inc
 fi
 
+if [ -f ~/.zsh/golang-crosscompile/crosscompile.bash ]; then
+    source ~/.zsh/golang-crosscompile/crosscompile.bash
+fi
+
 # Apple logo!
 ~/.zsh/archey-osx -c
 
