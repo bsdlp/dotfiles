@@ -2,6 +2,7 @@
 
 if [ -e /usr/local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME=$HOME/.venvs
+    export VIRTUALENVWRAPPER_PYTHON=$(which python3)
     mkdir -p $WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
 
