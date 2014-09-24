@@ -22,6 +22,10 @@ if [ -d /usr/local/opt/scala ]; then
     export PATH="$PATH:$SCALA_HOME/bin"
 fi
 
+setjdk() {
+    export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+}
+
 if [ -d /Users/jchen/google-cloud-sdk ]; then
     source /Users/jchen/google-cloud-sdk/path.zsh.inc
 fi
