@@ -16,18 +16,12 @@
 [submodule "dotfiles/.vim/bundle/vim-jinja"]
     path = dotfiles/.vim/bundle/vim-jinja
     url = https://github.com/mitsuhiko/vim-jinja.git
-[submodule "dotfiles/.zsh/k"]
-    path = dotfiles/.zsh/k
-    url = https://github.com/supercrabtree/k.git
 [submodule "dotfiles/.vim/bundle/salt-vim"]
     path = dotfiles/.vim/bundle/salt-vim
     url = https://github.com/saltstack/salt-vim.git
 [submodule "dotfiles/.vim/bundle/vim-go"]
     path = dotfiles/.vim/bundle/vim-go
     url = https://github.com/fatih/vim-go.git
-[submodule "dotfiles/.zsh/z"]
-    path = dotfiles/.zsh/z
-    url = https://github.com/rupa/z.git
 [submodule "dotfiles/.vim/bundle/vim-scala"]
 	path = dotfiles/.vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
