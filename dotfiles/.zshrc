@@ -16,7 +16,6 @@ zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa id_ed25519
 # OS-specific jawns
 if [ "$(uname)" = "Darwin" ]; then
     source ~/.zsh/osx/osx.zshrc
-    source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 elif [ "$(uname)" = "FreeBSD" ]; then
     source ~/.zsh/freebsd/freebsd.zshrc
 elif [ -f /etc/debian_version ]; then

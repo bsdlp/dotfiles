@@ -30,5 +30,9 @@ if [ -d /Users/jchen/google-cloud-sdk ]; then
     source /Users/jchen/google-cloud-sdk/path.zsh.inc
 fi
 
+# Source things
+source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
+source ~/.zsh/gpg_agent.zsh
+
 # Apple logo!
 ~/.zsh/archey-osx -c
