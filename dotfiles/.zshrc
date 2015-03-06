@@ -30,9 +30,6 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/venv.sh
 source ~/.zsh/ssh_sockets.zsh
 source ~/.zsh/docker.zsh
-if [ -e "/usr/local/bin/aws_zsh_completer.sh" ]; then
-    source /usr/local/bin/aws_zsh_completer.sh
-fi
 if [ -e "~/.zsh/github" ]; then
     source ~/.zsh/github
 fi
