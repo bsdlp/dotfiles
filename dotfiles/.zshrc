@@ -30,6 +30,9 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/venv.sh
 source ~/.zsh/ssh_sockets.zsh
 source ~/.zsh/docker.zsh
+if [ -f ~/.zsh/ttv/ttv.zshrc ]; then
+    source ~/.zsh/ttv/ttv.zshrc
+fi
 if [ -e "~/.zsh/github" ]; then
     source ~/.zsh/github
 fi
