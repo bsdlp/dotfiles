@@ -71,6 +71,7 @@ alias rake="noglob rake"
 alias bower='noglob bower'
 alias v='vim'
 alias pcs='scp -S hss'
+alias vr='vagrant destroy -f && vagrant up'
 
 # exports
 export EDITOR=vim
