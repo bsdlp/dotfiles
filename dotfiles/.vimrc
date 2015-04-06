@@ -227,5 +227,8 @@ let g:airline_powerline_fonts = 1
 set ttimeoutlen=50
 set t_Co=256
 
+" puppet
+let g:puppet_align_hashes = 1
+
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
