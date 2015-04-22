@@ -230,5 +230,13 @@ set t_Co=256
 " puppet
 let g:puppet_align_hashes = 1
 
+" go stuff
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
