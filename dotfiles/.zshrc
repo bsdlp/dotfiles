@@ -11,7 +11,7 @@ export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # define which keys to load
-zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa id_ed25519
+zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # OS-specific jawns
 if [ "$(uname)" = "Darwin" ]; then
