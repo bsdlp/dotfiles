@@ -237,6 +237,9 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+"" golint
+autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
