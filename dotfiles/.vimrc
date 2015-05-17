@@ -101,9 +101,6 @@ filetype plugin indent on
 " leader key to ,
 let mapleader=","
 
-" source matchit.vim so that % can search through if/else/etc
-runtime plugins/matchit.vim
-
 " maintain more context around cursor
 set scrolloff=3
 
