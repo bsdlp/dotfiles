@@ -84,10 +84,6 @@ set smartcase
 filetype off
 syntax on
 
-
-" enable mouse
-set mouse-=a
-
 " set colorscheme
 colorscheme solarized
 set background=dark
