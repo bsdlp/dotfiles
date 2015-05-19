@@ -39,7 +39,6 @@ set wrapscan
 " tab and indentation
 set tabstop=4
 set softtabstop=4
-" set noexpandtab
 set smarttab
 set shiftwidth=4
 set backspace=indent,eol,start
@@ -64,7 +63,6 @@ set ruler
 
 " status bar
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %c,%l/%L]\
-"set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set cmdheight=1
 
@@ -108,9 +106,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk
-"nnoremap s l
-"nnoremap l s
-"vnoremap s l
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -142,11 +137,6 @@ set hidden
 set history=1000   " remember more commands and search history
 set undolevels=1000 " use many levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
-"set title "terminal title
-
-" Shows spaces as you're writing
-"set list
-"set listchars=tab:>.trail:.,extends:#,nbsp:.
 
 set pastetoggle=<F2>
 
@@ -205,8 +195,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey   ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=grey
-"taglist config
-" nnoremap <leader>t :TlistToggle<CR>
 
 "fuzzyfinder config
 nnoremap <leader>f :FufFile<CR>
