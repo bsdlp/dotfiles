@@ -55,9 +55,6 @@ set nopaste
 " show commands
 set showcmd
 
-" yank to paste buffer
-" set clipboard=unnamedplus
-
 " show line and column position of cursor
 set ruler
 
@@ -120,10 +117,6 @@ map ^[[1~ <Home>
 map ^[[4~ <End>
 imap ^[[1~ <Home>
 imap ^[[4~ <End>
-
-" fix regex so it's like perl/python
-"nnoremap / /\v
-"vnoremap / /\v
 
 " clear highlights with ,<space>
 nnoremap <leader><space> :noh<cr>
