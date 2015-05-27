@@ -31,7 +31,6 @@ set directory=$HOME/.vim
 set nobackup
 set nowritebackup
 set noswapfile
-" set undodir=$HOME/.vimbackup
 
 " wrap searches
 set wrapscan
