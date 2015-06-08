@@ -12,7 +12,7 @@ if [[ $1 == "-c" ]]; then
 fi
 
 # Variables
-host=$(hostname | sed 's/.local//g')
+host=$(hostname -s)
 user=$(whoami)
 OS="OS X $(sw_vers -productVersion)"
 shell="$SHELL"

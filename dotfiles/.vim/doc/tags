@@ -8,15 +8,6 @@
 'solarized_termtrans'	solarized.txt	/*'solarized_termtrans'*
 'solarized_underline'	solarized.txt	/*'solarized_underline'*
 'solarized_visibility'	solarized.txt	/*'solarized_visibility'*
-Sprunge-contents	sprunge.txt	/*Sprunge-contents*
-SprungeBugs	sprunge.txt	/*SprungeBugs*
-SprungeChangelog	sprunge.txt	/*SprungeChangelog*
-SprungeConfig	sprunge.txt	/*SprungeConfig*
-SprungeContributing	sprunge.txt	/*SprungeContributing*
-SprungeCredits	sprunge.txt	/*SprungeCredits*
-SprungeIntro	sprunge.txt	/*SprungeIntro*
-SprungeLicense	sprunge.txt	/*SprungeLicense*
-SprungeUsage	sprunge.txt	/*SprungeUsage*
 before	solarized.txt	/*before*
 im_1	imaps.txt	/*im_1*
 imaps-usage	imaps.txt	/*imaps-usage*
@@ -32,7 +23,6 @@ solarized-options	solarized.txt	/*solarized-options*
 solarized-term	solarized.txt	/*solarized-term*
 solarized-togglebg	solarized.txt	/*solarized-togglebg*
 solarized.vim	solarized.txt	/*solarized.vim*
-sprunge.txt	sprunge.txt	/*sprunge.txt*
 toggle-background	solarized.txt	/*toggle-background*
 toggle-bg	solarized.txt	/*toggle-bg*
 togglebg	solarized.txt	/*togglebg*

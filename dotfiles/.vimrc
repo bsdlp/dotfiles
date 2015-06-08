@@ -31,7 +31,6 @@ set directory=$HOME/.vim
 set nobackup
 set nowritebackup
 set noswapfile
-" set undodir=$HOME/.vimbackup
 
 " wrap searches
 set wrapscan
@@ -39,7 +38,6 @@ set wrapscan
 " tab and indentation
 set tabstop=4
 set softtabstop=4
-" set noexpandtab
 set smarttab
 set shiftwidth=4
 set backspace=indent,eol,start
@@ -56,15 +54,11 @@ set nopaste
 " show commands
 set showcmd
 
-" yank to paste buffer
-" set clipboard=unnamedplus
-
 " show line and column position of cursor
 set ruler
 
 " status bar
 set statusline=\ \%f%m%r%h%w\ ::\ %y\ [%{&ff}]\%=\ [%p%%:\ %c,%l/%L]\
-"set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P
 set laststatus=2
 set cmdheight=1
 
@@ -84,10 +78,6 @@ set smartcase
 filetype off
 syntax on
 
-
-" enable mouse
-set mouse-=a
-
 " set colorscheme
 colorscheme solarized
 set background=dark
@@ -101,9 +91,6 @@ filetype plugin indent on
 " leader key to ,
 let mapleader=","
 
-" source matchit.vim so that % can search through if/else/etc
-runtime plugins/matchit.vim
-
 " maintain more context around cursor
 set scrolloff=3
 
@@ -115,9 +102,6 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk
-"nnoremap s l
-"nnoremap l s
-"vnoremap s l
 nnoremap <up> <nop>
 nnoremap <down> <nop>
 nnoremap <left> <nop>
@@ -133,10 +117,6 @@ map ^[[4~ <End>
 imap ^[[1~ <Home>
 imap ^[[4~ <End>
 
-" fix regex so it's like perl/python
-"nnoremap / /\v
-"vnoremap / /\v
-
 " clear highlights with ,<space>
 nnoremap <leader><space> :noh<cr>
 
@@ -149,11 +129,6 @@ set hidden
 set history=1000   " remember more commands and search history
 set undolevels=1000 " use many levels of undo
 set wildignore=*.swp,*.bak,*.pyc,*.class
-"set title "terminal title
-
-" Shows spaces as you're writing
-"set list
-"set listchars=tab:>.trail:.,extends:#,nbsp:.
 
 set pastetoggle=<F2>
 
@@ -212,8 +187,6 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=darkgrey   ctermbg=darkgrey
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=grey ctermbg=grey
-"taglist config
-" nnoremap <leader>t :TlistToggle<CR>
 
 "fuzzyfinder config
 nnoremap <leader>f :FufFile<CR>
@@ -226,6 +199,20 @@ hi Search ctermbg=7
 let g:airline_powerline_fonts = 1
 set ttimeoutlen=50
 set t_Co=256
+
+" puppet
+let g:puppet_align_hashes = 1
+
+" go stuff
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+"" golint
+autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
+set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim

@@ -8,10 +8,10 @@ prompt walters
 export GOPATH=$HOME/go
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
 export RBENV_ROOT=/usr/local/var/rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null; then source <(rbenv init -); fi
 
 # define which keys to load
-zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa id_ed25519
+zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # OS-specific jawns
 if [ "$(uname)" = "Darwin" ]; then
@@ -71,6 +71,7 @@ alias rake="noglob rake"
 alias bower='noglob bower'
 alias v='vim'
 alias pcs='scp -S hss'
+alias vr='vagrant destroy -f && vagrant up'
 
 # exports
 export EDITOR=vim
