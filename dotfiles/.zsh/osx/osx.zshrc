@@ -34,5 +34,9 @@ fi
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 source ~/.zsh/gpg_agent.zsh
 
+if [ -e /usr/local/share/zsh/site-functions/_aws ]; then
+    source /usr/local/share/zsh/site-functions/_aws
+fi
+
 # Apple logo!
 ~/.zsh/archey-osx -c
