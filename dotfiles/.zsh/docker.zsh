@@ -3,4 +3,4 @@ function dc() {
     docker images | awk '!/^REPO/ {print $3}' | xargs docker rmi -f
 }
 
-alias b2d='$(boot2docker shellinit)'
+alias dm='$(docker-machine env)'
