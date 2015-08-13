@@ -3,4 +3,4 @@ function dc() {
     docker images | awk '!/^REPO/ {print $3}' | xargs docker rmi -f
 }
 
-alias dm='$(docker-machine env)'
+alias dm='eval "$(docker-machine env default)"'
