@@ -34,3 +34,6 @@
 [submodule "dotfiles/.vim/bundle/toml"]
 	path = dotfiles/.vim/bundle/toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "dotfiles/.vim/bundle/vim-unimpaired"]
+	path = dotfiles/.vim/bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
