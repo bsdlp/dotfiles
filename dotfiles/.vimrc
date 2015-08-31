@@ -172,7 +172,7 @@ nnoremap <leader>8 8gt
 nnoremap <leader>9 9gt
 nnoremap <leader>0 :tablast<CR>
 cnoreabbrev t tabedit
-nnoremap <leader>t :tabedit
+nnoremap <leader>t :tabedit ./<CR>
 
 
 set grepprg=grep\ -nH\ $*
