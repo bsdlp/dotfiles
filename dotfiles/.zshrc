@@ -5,7 +5,7 @@ promptinit
 prompt walters
 
 # pathy jawns
-export GOPATH=$HOME/go
+export GOPATH=$HOME/
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
 export RBENV_ROOT=/usr/local/var/rbenv
 if which rbenv > /dev/null; then source <(rbenv init -); fi
