@@ -38,5 +38,10 @@ if [ -e /usr/local/share/zsh/site-functions/_aws ]; then
     source /usr/local/share/zsh/site-functions/_aws
 fi
 
+PHP_BIN_DIR=$(brew --prefix homebrew/php/php70)/bin
+if [ -d $PHP_BIN_DIR ] ; then
+    export PATH="$PHP_BIN_DIR:$PATH"
+fi
+
 # Apple logo!
 ~/.zsh/archey-osx -c
