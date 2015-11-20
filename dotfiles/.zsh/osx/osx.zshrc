@@ -43,5 +43,10 @@ if [ -d $PHP_BIN_DIR ] ; then
     export PATH="$PHP_BIN_DIR:$PATH"
 fi
 
+ARCANIST_BIN_DIR=$(readlink -f $HOME/arcanist/bin)
+if [ -d $ARCANIST_BIN_DIR ] ; then
+    export PATH="$ARCANIST_BIN_DIR:$PATH"
+fi
+
 # Apple logo!
 ~/.zsh/archey-osx -c
