@@ -1,6 +1,7 @@
 [user]
 	name = Jon Chen
-	email = bsd@voltaire.sh
+	email = jchen@twitch.tv
+	signingkey = 2709E8A6
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
 	pager = less -x4

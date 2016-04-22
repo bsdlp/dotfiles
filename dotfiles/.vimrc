@@ -47,7 +47,8 @@ set hidden
 set wildmenu
 set wildmode=list:longest
 set ttyfast
-set cursorline
+set nocursorline
+set synmaxcol=128
 set laststatus=2
 set nopaste
 
