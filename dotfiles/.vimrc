@@ -81,7 +81,7 @@ syntax on
 
 " set colorscheme
 colorscheme solarized
-set background=light
+set background=dark
 
 "allows sudo with :w!!
 cmap w!! %!sudo tee > /dev/null %
