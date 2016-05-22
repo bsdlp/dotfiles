@@ -48,5 +48,7 @@ if [ -d $ARCANIST_BIN_DIR ] ; then
     export PATH="$ARCANIST_BIN_DIR:$PATH"
 fi
 
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+
 # Apple logo!
 ~/.zsh/archey-osx -c
