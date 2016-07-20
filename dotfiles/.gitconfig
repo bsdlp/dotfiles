@@ -30,3 +30,5 @@
 	default = simple
 [grep]
 	lineNumber = true
+[http]
+	cookiefile = /Users/szuhchen/.gitcookies
