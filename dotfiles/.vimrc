@@ -175,8 +175,10 @@ nnoremap <leader>0 :tablast<CR>
 cnoreabbrev t tabedit
 nnoremap <leader>t :tabedit ./<CR>
 
-
 set grepprg=grep\ -nH\ $*
+
+" fix mixed indents
+map <F7> mzgg=G`z
 
 " Python stuff
 autocmd BufRead,BufNewFile *.py set ai
