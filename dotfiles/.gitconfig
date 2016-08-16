@@ -1,7 +1,7 @@
 [user]
 	name = Jon Chen
 	email = jchen@twitch.tv
-	signingkey = 2709E8A6
+	signingkey = 718EB733
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
 	pager = less -x4
@@ -32,3 +32,5 @@
 	lineNumber = true
 [http]
 	cookiefile = /Users/szuhchen/.gitcookies
+[commit]
+	gpgsign = true
