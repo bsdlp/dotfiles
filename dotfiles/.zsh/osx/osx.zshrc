@@ -26,8 +26,9 @@ setjdk() {
     export JAVA_HOME=$(/usr/libexec/java_home -v $1)
 }
 
-if [ -d /Users/jchen/google-cloud-sdk ]; then
-    source /Users/jchen/google-cloud-sdk/path.zsh.inc
+if [ -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/ ]; then
+    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 fi
 
 # Source things
