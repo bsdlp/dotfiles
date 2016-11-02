@@ -37,12 +37,6 @@
 [submodule "dotfiles/.vim/bundle/vim-unimpaired"]
 	path = dotfiles/.vim/bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
-[submodule "dotfiles/arcanist/libphutil"]
-	path = dotfiles/arcanist/libphutil
-	url = https://github.com/phacility/libphutil.git
-[submodule "dotfiles/arcanist/arcanist"]
-	path = dotfiles/arcanist/arcanist
-	url = https://github.com/phacility/arcanist.git
 [submodule "dotfiles/.vim/bundle/vim-airline-themes"]
 	path = dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
