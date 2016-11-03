@@ -1,7 +1,7 @@
 [user]
 	name = Jon Chen
-	email = bsd@voltaire.sh
-	signingkey = 718EB733
+	email = jchen@twitch.tv
+	signingkey = 2709E8A6
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
 	pager = less -x4
@@ -38,3 +38,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+[hub]
+	host = git-aws.internal.justin.tv
