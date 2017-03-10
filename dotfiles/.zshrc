@@ -6,6 +6,7 @@ prompt walters
 
 # pathy jawns
 export GOPATH=$HOME/
+export GOBIN=$HOME/bin
 export GO15VENDOREXPERIMENT=1
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$GOPATH/bin"
 export RBENV_ROOT=/usr/local/var/rbenv
