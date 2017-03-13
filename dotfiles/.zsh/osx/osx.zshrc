@@ -39,11 +39,6 @@ if [ -e /usr/local/share/zsh/site-functions/_aws ]; then
     source /usr/local/share/zsh/site-functions/_aws
 fi
 
-PHP_BIN_DIR=$(brew --prefix homebrew/php/php70)/bin
-if [ -d $PHP_BIN_DIR ] ; then
-    export PATH="$PHP_BIN_DIR:$PATH"
-fi
-
 ARCANIST_BIN_DIR=$(readlink -f $HOME/arcanist/arcanist/bin)
 if [ -d $ARCANIST_BIN_DIR ] ; then
     export PATH="$ARCANIST_BIN_DIR:$PATH"
