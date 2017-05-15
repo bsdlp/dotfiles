@@ -4,6 +4,7 @@
 export _ENVIRONMENT="osx"
 
 # gnu coreutil aliases
+alias grep='ggrep'
 alias cp='gcp -i'
 alias find='gfind'
 alias ls='gls --color=auto --group-directories-first'
