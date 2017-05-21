@@ -206,6 +206,9 @@ set t_Co=256
 " puppet
 let g:puppet_align_hashes = 1
 
+" terraform
+let g:terraform_align = 1
+
 " go stuff
 let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
@@ -213,6 +216,7 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
 "" golint
 autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
