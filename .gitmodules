@@ -40,3 +40,6 @@
 [submodule "dotfiles/.vim/bundle/vim-airline-themes"]
 	path = dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "dotfiles/.vim/bundle/vim-graphql"]
+	path = dotfiles/.vim/bundle/vim-graphql
+	url = https://github.com/jparise/vim-graphql.git
