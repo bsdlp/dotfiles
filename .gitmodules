@@ -43,3 +43,6 @@
 [submodule "dotfiles/.vim/bundle/vim-graphql"]
 	path = dotfiles/.vim/bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql.git
+[submodule "dotfiles/.vim/bundle/vim-javascript"]
+	path = dotfiles/.vim/bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
