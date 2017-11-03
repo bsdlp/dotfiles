@@ -3,3 +3,4 @@
 dotfiles/.zsh/github
 dotfiles/.config/pip/
 dotfiles/.gnupg/pubring.gpg~
+/dotfiles/.gnupg/.gpg-v21-migrated
