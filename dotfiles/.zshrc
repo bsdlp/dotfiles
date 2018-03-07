@@ -30,7 +30,7 @@ if [ -d ~/.zsh/zsh-git-prompt/src/.bin ]; then
     export PATH="~/.zsh/zsh-git-prompt/src/.bin:$PATH"
     export GIT_PROMPT_EXECUTABLE="haskell"
 fi
-export ZSH_THEME_GIT_PROMPT_CACHE=""
+export ZSH_THEME_GIT_PROMPT_CACHE="yes"
 
 # sources
 source ~/.zsh/zsh-git-prompt/zshrc.sh
