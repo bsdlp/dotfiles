@@ -26,7 +26,7 @@ elif [ -f /etc/pacman.conf ]; then
     source ~/.zsh/archlinux/archlinux.zshrc
 fi
 
-if [ -d ~/.zsh/zsh-git-prompt/src/.bin ]; then
+if [ -f ~/.zsh/zsh-git-prompt/src/.bin/gitstatus ]; then
     export PATH="~/.zsh/zsh-git-prompt/src/.bin:$PATH"
     export GIT_PROMPT_EXECUTABLE="haskell"
 fi
