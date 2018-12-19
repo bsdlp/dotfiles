@@ -222,5 +222,7 @@ let g:go_highlight_build_constraints = 1
 autocmd BufWritePost,FileWritePost *.go execute 'Lint' | cwindow
 set rtp+=$GOPATH/src/github.com/golang/lint/misc/vim
 
+command GoMetaLint :execute "GoMetaLinter " . FugitiveGitDir() . "/..."
+
 source ~/.vim/plugin/comments.vim
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
