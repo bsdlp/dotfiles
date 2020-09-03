@@ -1,6 +1,6 @@
 [user]
 	name = Jon Chen
-	email = jchen@twitch.tv
+	email = szuhchen@twitch.tv
 	signingkey = 2709E8A6
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
@@ -17,6 +17,7 @@
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	g = grep --break --heading --line-number
 	today = !sh -c 'git diff $(git rev-list -n1 --before=\"1 day ago\" $(git rev-parse --abbrev-ref HEAD))'
+	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
 
 [github]
 	user = fly
@@ -40,3 +41,5 @@
 	required = true
 [hub]
 	host = git-aws.internal.justin.tv
+[pull]
+	rebase = true
