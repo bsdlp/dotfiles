@@ -32,3 +32,11 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
+record_pwd() { pwd > /tmp/.cwd-$USER }
+
+touch /tmp/.cwd-$USER
+cd `cat /tmp/.cwd-$USER`
+
+# register hooks
+add-zsh-hook chpwd record_pwd
+
