@@ -1,6 +1,3 @@
-[submodule "dotfiles/.zsh/zsh-git-prompt"]
-    path = dotfiles/.zsh/zsh-git-prompt
-    url = https://github.com/bsdlp/zsh-git-prompt.git
 [submodule "dotfiles/.zsh/zsh-syntax-highlighting"]
     path = dotfiles/.zsh/zsh-syntax-highlighting
     url = https://github.com/bsdlp/zsh-syntax-highlighting.git
