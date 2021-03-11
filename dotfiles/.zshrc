@@ -1,8 +1,6 @@
 # basic stuff
-autoload -U compinit promptinit add-zsh-hook zmv
+autoload -U compinit add-zsh-hook zmv
 compinit -u
-promptinit
-prompt walters
 
 # pathy jawns
 export GOPATH=$HOME/
@@ -26,14 +24,9 @@ elif [ -f /etc/pacman.conf ]; then
     source ~/.zsh/archlinux/archlinux.zshrc
 fi
 
-if [ -f ~/.zsh/zsh-git-prompt/src/.bin/gitstatus ]; then
-    export PATH="~/.zsh/zsh-git-prompt/src/.bin:$PATH"
-    export GIT_PROMPT_EXECUTABLE="haskell"
-fi
-export ZSH_THEME_GIT_PROMPT_CACHE="yes"
 
 # sources
-source ~/.zsh/zsh-git-prompt/zshrc.sh
+source ~/.zsh/git-prompt.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/venv.sh
 source ~/.zsh/ssh_sockets.zsh
@@ -45,8 +38,15 @@ if [ -e "~/.zsh/github" ]; then
     source ~/.zsh/github
 fi
 
-# update prompt
-PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(git_super_status)> '
+export ZSH_THEME_GIT_PROMPT_PREFIX="("
+export ZSH_THEME_GIT_PROMPT_SUFFIX=")"
+export ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[red]%}✖"
+export ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[blue]%}●"
+export ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg[red]%}✚"
+export ZSH_THEME_GIT_PROMPT_UNTRACKED="…"
+export ZSH_THEME_GIT_PROMPT_STASHED="%{$fg[blue]%}⚑"
+export PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(gitprompt)> '
+export RPROMPT='%~'
 
 # binds
 bindkey -v

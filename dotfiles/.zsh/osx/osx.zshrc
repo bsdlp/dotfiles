@@ -37,5 +37,4 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
-# Apple logo!
-~/.zsh/archey-osx -c
+
