@@ -13,9 +13,6 @@
 [submodule "dotfiles/.vim/bundle/vim-python-pep8-indent"]
     path = dotfiles/.vim/bundle/vim-python-pep8-indent
     url = https://github.com/hynek/vim-python-pep8-indent.git
-[submodule "dotfiles/.vim/bundle/vim-jinja"]
-    path = dotfiles/.vim/bundle/vim-jinja
-    url = https://github.com/mitsuhiko/vim-jinja.git
 [submodule "dotfiles/.vim/bundle/vim-go"]
     path = dotfiles/.vim/bundle/vim-go
     url = https://github.com/fatih/vim-go.git
@@ -25,9 +22,6 @@
 [submodule "dotfiles/.vim/bundle/tabular"]
 	path = dotfiles/.vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "dotfiles/.vim/bundle/vim-terraform"]
-	path = dotfiles/.vim/bundle/vim-terraform
-	url = https://github.com/hashivim/vim-terraform.git
 [submodule "dotfiles/.vim/bundle/toml"]
 	path = dotfiles/.vim/bundle/toml
 	url = https://github.com/cespare/vim-toml.git
@@ -37,9 +31,6 @@
 [submodule "dotfiles/.vim/bundle/vim-airline-themes"]
 	path = dotfiles/.vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "dotfiles/.vim/bundle/vim-graphql"]
-	path = dotfiles/.vim/bundle/vim-graphql
-	url = https://github.com/jparise/vim-graphql.git
 [submodule "dotfiles/.vim/bundle/vim-javascript"]
 	path = dotfiles/.vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
