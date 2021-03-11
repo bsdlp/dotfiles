@@ -26,7 +26,6 @@ fi
 # sources
 source ~/.zsh/git-prompt.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/venv.sh
 source ~/.zsh/ssh_sockets.zsh
 source ~/.zsh/docker.zsh
 if [ -f ~/.zsh/ttv/ttv.zshrc ]; then
