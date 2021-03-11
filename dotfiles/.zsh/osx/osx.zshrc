@@ -17,11 +17,6 @@ alias sed='gsed'
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
 
-if [ -d /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/ ]; then
-    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-    source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-fi
-
 # Source things
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 source ~/.zsh/gpg_agent.zsh
@@ -36,5 +31,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-
 
