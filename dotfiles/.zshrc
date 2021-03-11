@@ -12,14 +12,12 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/local/share/npm/bin:/usr/bin:/b
 zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # OS-specific jawns
-if [ "$(uname)" = "Darwin" ]; then
-    source ~/.zsh/osx/osx.zshrc
-elif [ "$(uname)" = "FreeBSD" ]; then
-    source ~/.zsh/freebsd/freebsd.zshrc
-elif [ -f /etc/debian_version ]; then
+if [ -f /etc/debian_version ]; then
     source ~/.zsh/debian/debian.zshrc
 elif [ -f /etc/pacman.conf ]; then
     source ~/.zsh/archlinux/archlinux.zshrc
+else
+    source ~/.zsh/osx/osx.zshrc
 fi
 
 
@@ -31,19 +29,7 @@ source ~/.zsh/docker.zsh
 if [ -f ~/.zsh/ttv/ttv.zshrc ]; then
     source ~/.zsh/ttv/ttv.zshrc
 fi
-if [ -e "~/.zsh/github" ]; then
-    source ~/.zsh/github
-fi
-
-export ZSH_THEME_GIT_PROMPT_PREFIX="("
-export ZSH_THEME_GIT_PROMPT_SUFFIX=")"
-export ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[red]%}✖"
-export ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[blue]%}●"
-export ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg[red]%}✚"
-export ZSH_THEME_GIT_PROMPT_UNTRACKED="…"
-export ZSH_THEME_GIT_PROMPT_STASHED="%{$fg[blue]%}⚑"
-export PROMPT='%B%(?..[%?] )%b%n@%U%m%u$(gitprompt)> '
-export RPROMPT='%~'
+source ~/.zsh/prompt-config.zsh
 
 # binds
 bindkey -v
@@ -75,8 +61,6 @@ alias vime='vim -u ~/.vimencrypt -x'
 alias rake="noglob rake"
 alias bower='noglob bower'
 alias v='vim'
-alias pcs='scp -S hss'
-alias vr='vagrant destroy -f && vagrant up'
 
 # exports
 export EDITOR=vim
