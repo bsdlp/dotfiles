@@ -3,6 +3,7 @@
 # set _ENVIRONMENT envvar
 export _ENVIRONMENT="osx"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # gnu coreutil aliases
 alias grep='ggrep'
 alias cp='gcp -i'
@@ -17,6 +18,7 @@ alias sed='gsed'
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
 
+
 # Source things
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
 source ~/.zsh/gpg_agent.zsh
@@ -28,6 +30,10 @@ fi
 export DYLD_LIBRARY_PATH=/usr/local/opt/openssl/lib:$DYLD_LIBRARY_PATH
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin
+
+export PICO_SDK_PATH=/Users/jchen/src/github.com/raspberrypi/pico-sdk
+
 
 record_pwd() { pwd > /tmp/.cwd-$USER }
 
