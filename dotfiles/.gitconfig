@@ -39,7 +39,10 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 [hub]
 	host = git-aws.internal.justin.tv
 [pull]
 	rebase = true
+[init]
+	defaultBranch = main
