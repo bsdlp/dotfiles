@@ -18,9 +18,6 @@
 	g = grep --break --heading --line-number
 	today = !sh -c 'git diff $(git rev-list -n1 --before=\"1 day ago\" $(git rev-parse --abbrev-ref HEAD))'
 	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
-
-[github]
-	user = fly
 [diff]
 	tool = vimdiff
 [difftool]
@@ -40,8 +37,6 @@
 	smudge = git-lfs smudge -- %f
 	required = true
 	process = git-lfs filter-process
-[hub]
-	host = git-aws.internal.justin.tv
 [pull]
 	rebase = true
 [init]
