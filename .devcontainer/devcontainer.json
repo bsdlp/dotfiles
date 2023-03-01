@@ -3,10 +3,12 @@
 {
 	"name": "Default Linux Universal",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
 	"features": {
 		"ghcr.io/jungaretti/features/make:1": {},
-		"ghcr.io/bsdlp/features/stow:1": {}
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+			"packages": "stow"
+		}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
