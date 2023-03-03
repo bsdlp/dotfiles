@@ -6,7 +6,6 @@ compinit -u
 export GOPATH=$HOME/
 export GOBIN=$HOME/bin
 export GO15VENDOREXPERIMENT=1
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin"
 
 # define which keys to load
 zstyle :omz:plugins:ssh-agent identities id_rsa
