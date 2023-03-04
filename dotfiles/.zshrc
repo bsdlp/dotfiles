@@ -12,9 +12,7 @@ zstyle :omz:plugins:ssh-agent identities id_rsa
 
 # OS-specific jawns
 if [ -f /etc/debian_version ]; then
-    source ~/.zsh/debian/debian.zshrc
 elif [ -f /etc/pacman.conf ]; then
-    source ~/.zsh/archlinux/archlinux.zshrc
 else
     source ~/.zsh/osx/osx.zshrc
 fi
