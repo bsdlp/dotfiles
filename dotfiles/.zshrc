@@ -8,7 +8,7 @@ export GOBIN=$HOME/bin
 export GO15VENDOREXPERIMENT=1
 
 # define which keys to load
-zstyle :omz:plugins:ssh-agent identities id_rsa
+zstyle :omz:plugins:ssh-agent identities id_ed25519
 
 # OS-specific jawns
 if [ -f /etc/debian_version ]; then
