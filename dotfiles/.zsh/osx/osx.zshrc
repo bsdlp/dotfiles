@@ -36,11 +36,11 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/l
 export PICO_SDK_PATH=/Users/jchen/src/github.com/raspberrypi/pico-sdk
 
 
-record_pwd() { pwd > /tmp/.cwd-$USER }
+#record_pwd() { pwd > /tmp/.cwd-$USER }
 
-touch /tmp/.cwd-$USER
-cd `cat /tmp/.cwd-$USER`
+#touch /tmp/.cwd-$USER
+#cd `cat /tmp/.cwd-$USER`
 
 # register hooks
-add-zsh-hook chpwd record_pwd
+#add-zsh-hook chpwd record_pwd
 
