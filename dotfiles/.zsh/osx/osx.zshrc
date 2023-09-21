@@ -18,7 +18,7 @@ alias sed='gsed'
 # Go jawns
 export GOROOT=/usr/local/opt/go/libexec
 
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin:~/.local/bin"
 
 # Source things
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
