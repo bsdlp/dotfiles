@@ -1,6 +1,6 @@
 [user]
 	name = Jon Chen
-	email = bsd@voltaire.sh
+	email = bsd@bsdlp.com
 	signingkey = 2709E8A6
 [core]
 	excludesfile = /Users/jchen/.gitignore_global
