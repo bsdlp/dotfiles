@@ -15,10 +15,12 @@ alias readlink='greadlink'
 alias rm='grm -i'
 alias sed='gsed'
 
-# Go jawns
-export GOROOT=/usr/local/opt/go/libexec
+export PATH="$PATH:$HOME/bin:$HOME/.cargo/bin:~/.local/bin"
 
-export PATH="$PATH:$GOPATH/bin:~/.local/bin"
+# clang
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 
 # Source things
 source ~/.zsh/zsh-ssh-agent/ssh-agent.plugin.zsh
@@ -29,9 +31,6 @@ if [ -e /usr/local/share/zsh/site-functions/_aws ]; then
 fi
 
 export DYLD_LIBRARY_PATH=/usr/local/opt/openssl/lib:$DYLD_LIBRARY_PATH
-
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin
 
 export PICO_SDK_PATH=/Users/jchen/src/github.com/raspberrypi/pico-sdk
 
