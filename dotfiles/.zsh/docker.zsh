@@ -9,3 +9,4 @@ function dc() {
 }
 
 alias dm='eval "$(docker-machine env default)"'
+export DOCKER_HOST="$HOME/.colima/docker.sock" >> ~/.zshrc
