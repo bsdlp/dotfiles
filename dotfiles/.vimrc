@@ -80,8 +80,8 @@ filetype off
 syntax on
 
 " set colorscheme
-colorscheme solarized
-set background=dark
+set termguicolors
+colorscheme catppuccin_mocha
 
 "allows sudo with :w!!
 cmap w!! %!sudo tee > /dev/null %
@@ -196,7 +196,7 @@ nnoremap <leader>f :FufFile<CR>
 nnoremap <leader>b :FufBuffer<CR>
 "
 "fix the bad search color with solarized
-hi Search ctermbg=7
+" hi Search ctermbg=7
 
 " airline
 let g:airline_powerline_fonts = 1

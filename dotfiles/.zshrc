@@ -26,6 +26,9 @@ source ~/.zsh/docker.zsh
 if [ -f ~/.zsh/ttv/ttv.zshrc ]; then
     source ~/.zsh/ttv/ttv.zshrc
 fi
+if [ -f ~/.zsh/mise.zsh ]; then
+    source ~/.zsh/mise.zsh
+fi
 source ~/.zsh/prompt-config.zsh
 
 # binds
@@ -90,3 +93,14 @@ fpath=(/Users/jchen/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+[[ "$TERM_PROGRAM" == "kiro" ]] && . "$(kiro --locate-shell-integration-path zsh)"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jchen/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# Added by Antigravity
+export PATH="/Users/jchen/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
