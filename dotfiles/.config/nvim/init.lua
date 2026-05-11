@@ -88,7 +88,6 @@ if has_treesitter then
     treesitter.setup({
         install_dir = vim.fn.stdpath("data") .. "/site",
     })
-    pcall(treesitter.install, treesitter_languages)
 end
 
 vim.api.nvim_create_autocmd("FileType", {
