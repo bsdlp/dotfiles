@@ -39,6 +39,7 @@ vim.cmd.syntax("on")
 vim.cmd.filetype("plugin indent on")
 
 local plugins = {
+    { src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
     { src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 }
@@ -48,6 +49,14 @@ if vim.pack and vim.env.DOTFILES_NVIM_SKIP_PACK ~= "1" then
     if not ok then
         vim.notify("vim.pack.add failed: " .. tostring(err), vim.log.levels.WARN)
     end
+end
+
+local has_catppuccin, catppuccin = pcall(require, "catppuccin")
+if has_catppuccin then
+    catppuccin.setup({
+        flavour = "mocha",
+    })
+    vim.cmd.colorscheme("catppuccin-mocha")
 end
 
 local treesitter_languages = {
