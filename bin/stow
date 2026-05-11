@@ -1,44 +1,47 @@
 #!/usr/bin/env bash
 
-if [ "$(uname)" = "Darwin" -o "$(uname)" = "FreeBSD" ]; then
-    STOWBIN=$(which stow)
-    READLINK=$(which greadlink)
+if [[ "$(uname)" == "Darwin" || "$(uname)" == "FreeBSD" ]]; then
+    STOWBIN=$(command -v stow)
+    READLINK=$(command -v greadlink)
 else
     STOWBIN=/usr/bin/stow
     READLINK=/bin/readlink
 fi
 
-if [ $1 ]
-then
-    TARGET_DIR=$1
+if [[ "$#" -gt 0 ]]; then
+    TARGET_DIR="$1"
 else
-    TARGET_DIR=$($READLINK -f $HOME)
+    TARGET_DIR="$("$READLINK" -f "$HOME")"
 fi
 
-echo $TARGET_DIR
+echo "$TARGET_DIR"
+
+IGNORES=(
+    --ignore='.gitmodules'
+    --ignore='.git'
+    --ignore='LICENSE'
+    --ignore='README.md'
+    --ignore='TODO'
+    --ignore='bin'
+    --ignore='^\.vim$'
+    --ignore='^\.vimrc$'
+    --ignore='^\.zsh/ttv'
+    --ignore='^\.gnupg'
+    --ignore='^\.config/htop'
+    --ignore='^dotfiles'
+)
 
 if [ -f ~/.ssh/authorized_keys ]; then
-    $STOWBIN \
-        -t $TARGET_DIR/ \
-        -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
-        --ignore='.gitmodules' \
-        --ignore='.git' \
-        --ignore='LICENSE' \
+    "$STOWBIN" \
+        -t "$TARGET_DIR/" \
+        -d "$( builtin cd "$(dirname "$0")/../" ; pwd -P )" \
         --ignore='.ssh' \
-        --ignore='README.md' \
-        --ignore='TODO' \
-        --ignore='bin' \
+        "${IGNORES[@]}" \
         dotfiles
 else
-    $STOWBIN \
-        -t $TARGET_DIR/ \
-        -d $( builtin cd $(dirname $0)/../ ; pwd -P ) \
-        --ignore='.gitmodules' \
-        --ignore='.git' \
-        --ignore='LICENSE' \
-        --ignore='README.md' \
-        --ignore='TODO' \
-        --ignore='bin' \
+    "$STOWBIN" \
+        -t "$TARGET_DIR/" \
+        -d "$( builtin cd "$(dirname "$0")/../" ; pwd -P )" \
+        "${IGNORES[@]}" \
         dotfiles
 fi
-

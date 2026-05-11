@@ -1,25 +1,22 @@
 #!/usr/bin/env make
 
-install: install_submodules install_needful shell
+install: brew stow shell
 
-update: install_submodules install_needful
+update: brew stow
 
-install_submodules:
-	git submodule init
-	git submodule update
+brew:
+	brew bundle
 
-install_needful:
-	git pull
+stow:
 	./bin/stow
 
 shell:
-	$(shell chsh --shell $(shell which zsh))
+	@shell="$$(command -v zsh)"; \
+	if ! grep -qx "$$shell" /etc/shells; then \
+		echo "$$shell is not listed in /etc/shells."; \
+		echo "Add it first, then rerun: make shell"; \
+		exit 1; \
+	fi; \
+	chsh -s "$$shell"
 
-pyinstall:
-	pip install virtualenvwrapper
-
-uninstall:
-	./bin/fuckoff
-
-.PHONY: shell
-
+.PHONY: install update brew stow shell

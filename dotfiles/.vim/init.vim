@@ -1,1 +1,0 @@
-/Users/jchen/.vimrc
