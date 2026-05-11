@@ -8,6 +8,7 @@ Small macOS-only dotfiles for:
 * zsh syntax highlighting through Homebrew
 * Neovim config under `~/.config/nvim`
 * mise for project-local tools and environment variables
+* Colima-backed Docker CLI
 
 ## Install
 
@@ -74,3 +75,20 @@ The Brewfile installs language servers for:
 
 The first Neovim launch may install plugins and Treesitter parsers. To refresh
 later, run `:lua vim.pack.update()` and `:TSUpdate`.
+
+## Docker
+
+This setup uses Colima rather than Docker Desktop. Start it with:
+
+```sh
+colima start
+docker context use colima
+```
+
+After that, `docker` and `docker compose` should use Colima's socket. Check
+with:
+
+```sh
+docker context ls
+colima status
+```
