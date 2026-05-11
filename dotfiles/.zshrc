@@ -50,6 +50,15 @@ alias cls='clear && ls'
 alias grep='LC_ALL=C grep'
 alias rake='noglob rake'
 alias bower='noglob bower'
+if (( $+commands[gls] )); then
+    alias ls='gls --color=auto --group-directories-first'
+elif [[ "$OSTYPE" == darwin* ]]; then
+    export CLICOLOR=1
+    alias ls='ls -G'
+else
+    alias ls='ls --color=auto'
+fi
+alias l='ls'
 alias v='nvim'
 alias vim='nvim'
 alias vi='nvim'
