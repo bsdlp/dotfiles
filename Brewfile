@@ -1,5 +1,3 @@
-tap "homebrew/bundle"
-
 brew "coreutils"
 brew "buf"
 brew "git"
@@ -9,6 +7,6 @@ brew "neovim"
 brew "pyright"
 brew "stow"
 brew "tree-sitter-cli"
-brew "typescript-language-server"
+#brew "typescript-language-server"
 brew "zsh"
 brew "zsh-syntax-highlighting"
