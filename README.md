@@ -7,6 +7,7 @@ Small macOS-only dotfiles for:
 * right-side current path prompt
 * zsh syntax highlighting through Homebrew
 * Neovim config under `~/.config/nvim`
+* [pi](https://github.com/badlogic/pi-mono) agent settings under `~/.pi/agent`
 * mise for project-local tools and environment variables
 * Colima-backed Docker CLI
 
@@ -36,6 +37,14 @@ zsh is still the best default fit here because it is the macOS default shell,
 supports the right prompt natively, and keeps shell scripting behavior familiar.
 Fish is excellent interactively, but switching would mean rewriting shell config
 and accepting different scripting semantics for little benefit in this setup.
+
+## pi
+
+Only `~/.pi/agent/settings.json` is managed. `auth.json`,
+`models-store.json`, `sessions/`, `npm/`, and `bin/` are machine-local and
+gitignored. The entries under `~/.pi/agent/agents`, `~/.pi/agent/skills`, and
+`~/.pi/agent/extensions` are symlinks into another repo's checkout, so they
+are intentionally left unmanaged.
 
 ## Secrets
 

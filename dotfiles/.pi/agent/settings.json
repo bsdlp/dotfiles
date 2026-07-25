@@ -1,0 +1,10 @@
+{
+  "lastChangelogVersion": "0.82.1",
+  "theme": "dark",
+  "defaultProvider": "kimi-coding",
+  "defaultModel": "k3",
+  "defaultThinkingLevel": "high",
+  "packages": [
+    "npm:pi-ask-user"
+  ]
+}
