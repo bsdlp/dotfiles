@@ -1,3 +1,5 @@
+
+
 # Keep startup small and macOS-focused.
 autoload -Uz compinit
 compinit
@@ -66,6 +68,10 @@ alias vi='nvim'
 alias vit='nvim ~/.todo.txt'
 alias vime='command vim -u ~/.vimencrypt -x'
 
+# docker host set to colima
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE="/var/run/docker.sock"
+
 calc() { awk "BEGIN { print $* }"; }
 
 if [[ -r "$HOME/.zshrc.local" ]]; then
@@ -107,3 +113,13 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=#6c7086'
 if [[ -n "$HOMEBREW_PREFIX" && -r "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]]; then
     source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jchen/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+
+
+# Added by Antigravity IDE
+export PATH="/Users/jchen/.antigravity-ide/antigravity-ide/bin:$PATH"
