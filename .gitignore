@@ -13,3 +13,8 @@ dotfiles/.gnupg/pubring.gpg~
 /dotfiles/.gnupg/pubring.kbx
 dotfiles/.vim/
 dotfiles/dotfiles/
+dotfiles/.pi/agent/auth.json
+dotfiles/.pi/agent/models-store.json
+dotfiles/.pi/agent/sessions/
+dotfiles/.pi/agent/npm/
+dotfiles/.pi/agent/bin/
