@@ -1,0 +1,14 @@
+# Theme
+theme = "Catppuccin Mocha"
+foreground = #e6e9ff
+
+# Transparency
+background-opacity = 0.95
+background-blur = true
+
+# Text
+font-family = "DejaVu Sans Mono for Powerline"
+font-size = 15
+
+# Use a broadly supported terminal definition on remote SSH hosts.
+shell-integration-features = ssh-env

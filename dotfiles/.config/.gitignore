@@ -1,4 +1,6 @@
 *
 !.gitignore
+!ghostty/
+!ghostty/config.ghostty
 !nvim/
 !nvim/init.lua
