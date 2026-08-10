@@ -118,8 +118,7 @@ fi
 export PATH="$PATH:/Users/jchen/.lmstudio/bin"
 # End of LM Studio CLI section
 
-
-
+export AWS_BEDROCK_FORCE_CACHE=1
 
 # Added by Antigravity IDE
 export PATH="/Users/jchen/.antigravity-ide/antigravity-ide/bin:$PATH"
